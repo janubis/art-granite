@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Order Process | Art Granite</title>
+  <meta name="description" content="Art Granite order process: consultation, material selection, expert fabrication, and professional installation across the DC Metro Area." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.YOURDOMAIN.com/process.html" />
+
+  <meta property="og:title" content="Order Process | Art Granite" />
+  <meta property="og:description" content="From selection to installation — a seamless experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.YOURDOMAIN.com/process.html" />
+  <meta property="og:image" content="https://www.YOURDOMAIN.com/assets/Order%20Process.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Art Granite Home">Art Granite</a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" data-nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="process.html" class="active" aria-current="page">Order Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="process-page">
+    <!-- Header -->
+    <section class="section process-head">
+      <div class="container process-head-row">
+        <div class="process-head-copy">
+          <h1 class="process-title">Our Process</h1>
+          <p class="process-sub">
+            From Selection to Installation: A Seamless Experience<br/>
+            within 24 hours in most orders
+          </p>
+        </div>
+
+        <a class="services-cta"
+           href="mailto:artgraniteinc@gmail.com?subject=Free%20Estimate%20Request">
+          GET YOUR FREE ESTIMATE
+        </a>
+      </div>
+    </section>
+
+    <!-- Canvas area -->
+    <section class="section process-canvas">
+        <div class="container">
+            <div class="process-stage process-stage-fixed">
+
+            <!-- dotted path BEHIND -->
+            <svg class="process-path" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                <linearGradient id="g1" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#2b63ff"/>
+                    <stop offset="70%" stop-color="#b26bff"/>
+                </linearGradient>
+                <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+                    <path d="M0,0 L9,3 L0,6 Z" fill="#b26bff"></path>
+                </marker>
+                </defs>
+
+                <!-- Small left curve (blue-ish) -->
+                <path d="M140,430 C70,360 70,270 140,230"
+                    fill="none"
+                    stroke="#2b63ff"
+                    stroke-width="4"
+                    stroke-dasharray="6 9"
+                    opacity="0.95" />
+
+                <!-- Main curve up-right (gradient) -->
+                <path d="M155,235
+                        C300,135 520,170 690,230
+                        C860,290 990,230 1080,140"
+                    fill="none"
+                    stroke="url(#g1)"
+                    stroke-width="4"
+                    stroke-dasharray="6 9"
+                    marker-end="url(#arrowHead)"
+                    opacity="0.95" />
+            </svg>
+
+            <!-- Step 1 -->
+            <article class="pstep s1">
+                <div class="pnum n1" aria-hidden="true">1</div>
+                <div class="ptext">
+                <h2>Free Consultation &amp;<br/>Measurement</h2>
+                <p>
+                    Schedule a visit to our showroom or request an in-home consultation. We'll discuss your vision,
+                    needs, and budget. We will take exact measurements, ensuring a perfect fit.
+                </p>
+                </div>
+            </article>
+
+            <!-- Step 2 -->
+            <article class="pstep s2">
+                <div class="pnum n2" aria-hidden="true">2</div>
+                <div class="ptext">
+                <h2>Material Selection</h2>
+                <p>
+                    Browse our extensive inventory and select the perfect slab. We'll guide you through colors,
+                    patterns, and material characteristics.
+                </p>
+                </div>
+            </article>
+
+            <!-- Step 3 -->
+            <article class="pstep s3">
+                <div class="pnum n3" aria-hidden="true">3</div>
+                <div class="ptext">
+                <h2>Expert Fabrication</h2>
+                <p>
+                    Using advanced equipment, we cut, shape, and polish your stone to perfection, creating custom
+                    edges and cutouts as specified.
+                </p>
+                </div>
+            </article>
+
+            <!-- Step 4 -->
+            <article class="pstep s4">
+                <div class="pnum n4" aria-hidden="true">4</div>
+                <div class="ptext">
+                <h2>Professional<br/>Installation</h2>
+                <p>
+                    Our professional installers complete your project with meticulous attention to detail, ensuring a flawless finish.
+                    We review the completed work with you and provide care instructions to help maintain your stone's beauty for years to come.
+                </p>
+                </div>
+            </article>
+
+            </div>
+        </div>
+        </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Art Granite. All rights reserved.</p>
+      <a href="index.html">Home</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
