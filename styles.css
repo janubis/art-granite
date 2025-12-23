@@ -9,7 +9,8 @@
 html{ scroll-behavior:smooth; }
 body{
   margin:0;
-  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
   color:var(--text);
   background:#fff;
 }
@@ -22,15 +23,16 @@ h1, h2, h3,
 .about-title,
 .contact-title,
 .ptext h2 {
-  font-family: "DM Serif Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
-  letter-spacing: -0.01em;
 }
 
 /* Subtitles */
 .hero-sub,
 .process-sub {
-  font-family: "DM Serif Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
 }
 
@@ -46,7 +48,7 @@ h1, h2, h3,
 
 .nav{
   display:flex; align-items:center; justify-content:space-between;
-  padding:14px 0;
+  /* padding:14px 0; */
   gap:16px;
 }
 
@@ -127,15 +129,16 @@ h1, h2, h3,
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding:12px 16px;
+  padding:15px 20px;
   border-radius:14px;
   background:var(--accent);
   color:#fff;
   text-decoration:none;
-  font-weight:800;
+  font-weight:300;
   border:1px solid transparent;
   box-shadow: var(--shadow);
   transition: transform .18s ease, filter .18s ease, box-shadow .18s ease;
+  font-size: 35px;
 }
 .btn:hover{
   transform: translateY(-1px);
@@ -172,7 +175,7 @@ h1, h2, h3,
 
 .hero-overlay{
   position:absolute; inset:0;
-  /* background: linear-gradient(90deg, rgba(0,0,0,.58), rgba(0,0,0,.12)); */
+  background: linear-gradient(90deg, rgba(0,0,0,.58), rgba(0,0,0,.12));
 }
 
 .hero-content{
@@ -186,23 +189,33 @@ h1, h2, h3,
 .hero h1{
   margin:0 0 10px;
   font-size:100px;
-  font-weight: 700;
-  letter-spacing:2px;
-  text-transform:uppercase;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  text-decoration: underline;
+
 }
 
 .hero-sub{
   margin:0 0 18px;
-  font-size:30px;
+  font-size: 45px;
   opacity:.95;
+  font-weight: 300;
   text-transform:uppercase;
+  margin-bottom: 100px;
 }
-
+.header-logo {
+  width: 100%;
+  max-width: 250px;
+}
 .hero-small{
-  margin:0 0 26px;
-  line-height:1.7;
-  opacity:.92;
-  max-width:660px;
+  margin: 0 0 26px;
+  line-height: 1;
+  font-size: 30px;
+  font-weight: 300;
+  opacity: .92;
+  max-width: 400px;
+  margin-bottom: 100px;
 }
 
 .hero-actions{
@@ -255,7 +268,7 @@ h1, h2, h3,
 /* ABOUT PAGE */
 /* ABOUT PAGE (matches Canva layout) */
 .about-page .section{
-  padding: 48px 0;
+  padding: 45px 0 0;
 }
 
 .about-top-grid{
@@ -266,10 +279,10 @@ h1, h2, h3,
 }
 
 .about-title{
-  margin:0 0 10px;
+  margin: 15px 0 15px;
   font-size: 40px;
   line-height:1.15;
-  font-weight: 800;
+  font-weight: 600;
   color: #173c34;
 }
 
@@ -277,7 +290,9 @@ h1, h2, h3,
   margin: 0 0 14px;
   color:#3f3f3f;
   line-height: 1.7;
-  font-size: 15px;
+  font-size: 16px;
+  max-width: 70ch;
+  font-weight: 300;
   max-width: 70ch;
 }
 
@@ -292,7 +307,8 @@ h1, h2, h3,
   padding-left: 18px;
   color:#2f2f2f;
   line-height: 1.85;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 300;
 }
 .about-bullets li::marker{
   color:#173c34;
@@ -312,7 +328,9 @@ h1, h2, h3,
   top: 14px;
   right: 14px;
   z-index: 2;
-  padding: 10px 14px;
+  padding: 15px 20px;
+  font-size: 25px;
+  max-width: 240px;
   border: 1px solid #cfcfcf;
   background: rgba(255,255,255,.92);
   color: #173c34;
@@ -344,7 +362,11 @@ h1, h2, h3,
 .about-left-stack, .about-right-stack{
   display:flex;
   flex-direction:column;
-  gap: 35px;
+  gap: 15px;
+}
+
+.about-right-stack {
+  margin-left: 30px;
 }
 
 .about-photo{
@@ -370,10 +392,15 @@ h1, h2, h3,
   border-left: none;
   color:#2f2f2f;
   line-height: 1.7;
+  font-size: 16px;
+  font-weight: 300;
 }
 .testimonials span{
   color:#444;
   font-weight: 700;
+}
+section.about-bottom.section {
+    margin-bottom: 50px;
 }
 
 /* FAQ */
@@ -391,13 +418,14 @@ h1, h2, h3,
 .faq-item h3{
   margin:0 0 6px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 600;
 }
 .faq-item p{
   margin:0;
   color:#3f3f3f;
   line-height:1.7;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 /* Responsive */
@@ -409,7 +437,7 @@ h1, h2, h3,
 
 /* SERVICES PAGE */
 .services-head{
-  padding: 34px 0 10px;
+  padding: 35px 0 20px;
 }
 .services-head-row{
   display:flex;
@@ -430,7 +458,9 @@ h1, h2, h3,
 
 /* Top right CTA like Canva */
 .services-cta{
-  padding: 10px 14px;
+  padding: 15px 20px;
+  font-size: 25px;
+  max-width: 240px;
   border: 1px solid #cfcfcf;
   background: rgba(255,255,255,.92);
   color: #173c34;
@@ -447,7 +477,7 @@ h1, h2, h3,
 /* Shared card styles for services (square like Canva) */
 .svc-card, .svc-tile{
   background:#fff;
-  border: 1px solid var(--line);
+  /* border: 1px solid var(--line);*/
   overflow:hidden;
 }
 .svc-card img, .svc-tile img{
@@ -456,11 +486,11 @@ h1, h2, h3,
   display:block;
 }
 .svc-body{
-  padding: 12px 12px 16px;
+  padding: 25px 0px 30px;
 }
 .svc-body h2, .svc-body h3{
-  margin: 0 0 6px;
-  font-size: 13px;
+  margin: 0 0 15px;
+  font-size: 16px;
   letter-spacing: .06em;
   text-transform: uppercase;
   font-weight: 900;
@@ -468,7 +498,8 @@ h1, h2, h3,
 }
 .svc-body p{
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 300;
   color:#444;
   line-height: 1.6;
 }
@@ -537,7 +568,7 @@ h1, h2, h3,
 
 /* PROCESS PAGE — CANVA-LIKE LAYOUT (fixed stage that scales) */
 .process-canvas{
-  padding: 18px 0 70px;
+  padding: 65px 0 70px;
 }
 
 /* “design stage” that scales but keeps proportions */
@@ -605,10 +636,10 @@ h1, h2, h3,
 .n4{ color:#c09a7b; text-shadow: 0 0 24px rgba(192,154,123,.35); }
 
 /* Placement (percent-based so it scales cleanly) */
-.s1{ left: 6%;  top: 18%; max-width: 540px; }
-.s2{ left: 22%; top: 58%; max-width: 520px; }
-.s3{ left: 56%; top: 48%; max-width: 520px; }
-.s4{ left: 74%; top: 14%; max-width: 360px; }
+.s1{ left: 0%;  top: -5%; max-width: 540px; }
+.s2{ left: 20%; top: 50%; max-width: 365px; }
+.s3{ left: 56%; top: 60%; max-width: 365px; }
+.s4{ left: 80%; top: 0%; max-width: 360px; }
 .s4 .ptext p{ max-width: 30ch; }
 
 /* MOBILE FALLBACK: stack (no absolute, no path) */
@@ -660,7 +691,9 @@ h1, h2, h3,
   position:absolute;
   top: 22px;
   right: 22px;
-  padding: 12px 18px;
+  padding: 15px 20px;
+  font-size: 25px;
+  max-width: 240px;
   border: 1px solid #cfcfcf;
   background: rgba(255,255,255,.92);
   color: #173c34;
@@ -683,21 +716,22 @@ h1, h2, h3,
 
 .contact-grid{
   display:grid;
-  grid-template-columns: 1.1fr .9fr;
+  grid-template-columns: 1.5fr .8fr;
   gap: 56px;
   align-items:start;
 }
 
 .contact-title{
   margin: 0 0 10px;
-  font-size: 34px;
+  font-size: 35px;
   font-weight: 900;
   color: #121212;
 }
 
 .contact-lead{
   margin: 0 0 22px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.6;
   color:#2f2f2f;
 }
@@ -708,6 +742,13 @@ h1, h2, h3,
   gap: 10px;
   align-items:baseline;
   flex-wrap:wrap;
+}
+.contact-service a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 300;
 }
 .brand-link{
   color:#1d2bd6; /* close to the blue link look in design */
@@ -724,6 +765,7 @@ h1, h2, h3,
 .hours-label{
   font-size: 20px;
   color:#2f2f2f;
+  font-weight: 800;
 }
 
 .hours-rows{
@@ -736,7 +778,8 @@ h1, h2, h3,
   display:grid;
   grid-template-columns: 160px 1fr;
   gap: 16px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
   color:#2f2f2f;
 }
 .hours-row .day{ color:#2f2f2f; }
@@ -751,15 +794,15 @@ h1, h2, h3,
 
 .contact-block h2{
   margin: 0 0 10px;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 900;
-  letter-spacing: .02em;
   color:#4a4a4a;
 }
 
 .contact-block p{
   margin: 0 0 10px;
-  font-size: 22px;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.5;
   color:#5a5a5a;
 }
@@ -788,4 +831,27 @@ h1, h2, h3,
   .hours-grid{ grid-template-columns: 1fr; }
   .contact-block p{ font-size: 18px; }
   .contact-title{ font-size: 30px; }
+}
+
+/* Start arrow higher, then slide down into place */
+.process-path{
+  transform: translateY(-120px);   /* start from top (adjust value) */
+  opacity: 0;
+  transition: transform 900ms ease, opacity 900ms ease;
+  will-change: transform, opacity;
+}
+
+/* final position */
+.process-path.in{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* accessibility */
+@media (prefers-reduced-motion: reduce){
+  .process-path{
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
 }

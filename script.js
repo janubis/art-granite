@@ -20,3 +20,13 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // document.getElementById("year")?.textContent = new Date().getFullYear();
+
+window.addEventListener("DOMContentLoaded", () => {
+  const arrow = document.getElementById("processArrow");
+  if (!arrow) return;
+
+  // next frame makes the transition trigger reliably
+  requestAnimationFrame(() => {
+    arrow.classList.add("in");
+  });
+});
